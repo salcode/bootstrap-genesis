@@ -41,11 +41,11 @@ var build_state = 'dev',
     // sass src files are loaded with sass includes
     // no need to list them here (i.e. only one sass src)
     sass_files = {
-        "css/style.min.css": "sass/style.scss"
+        "css/style.min.css": "css/sass/style.scss"
     },
     // watch all .scss files in our sass directory
     // for changes
-    watched_sass_files = [ 'sass/**/*.scss' ],
+    watched_sass_files = [ 'css/sass/**/*.scss' ],
     uglify_files = {
         'js/javascript.min.js': [
             'js/vendor/bootstrap/bootstrap.js',
