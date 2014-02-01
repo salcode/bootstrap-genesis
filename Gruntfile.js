@@ -37,7 +37,7 @@ sudo gem install sass
     // this value will be used for both the
     // initial process when `grunt` alone is run
     // as well as the tasks run via watch
-var build_state = 'dev',
+var build_state = 'prod',
     // sass src files are loaded with sass includes
     // no need to list them here (i.e. only one sass src)
     sass_files = {
