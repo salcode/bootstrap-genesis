@@ -48,12 +48,13 @@ var build_state = 'dev',
     watched_sass_files = [ 'css/sass/**/*.scss' ],
     uglify_files = {
         'js/javascript.min.js': [
-            'js/vendor/bootstrap/bootstrap.js',
+            'js/vendor/**/*.js',
+            'js/custom/javascript.js',
         ]
     },
     watched_js_files = [
         'js/vendor/**/*.js',
-        'js/custom/**/*.js',
+        'js/custom/*.js',
     ];
 
 module.exports = function(grunt) {
