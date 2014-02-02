@@ -4,9 +4,6 @@
  *
  */
 
-// Add HTML5 markup structure
-add_theme_support( 'html5' );
-
 /**
  * Include all php files in the /includes directory
  *
