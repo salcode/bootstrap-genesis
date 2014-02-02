@@ -8,6 +8,13 @@ function bsg_add_boostrap_classes() {
     // http://genesistutorials.com/genesis-structural-wraps-creating-a-full-width-genesis-child-theme/
     remove_theme_support( 'genesis-structural-wraps' );
 
+    // remove currently unsupported layouts
+    // more info about layouts at
+    // http://genesistutorials.com/understanding-genesis-layout-options/
+    genesis_unregister_layout( 'content-sidebar-sidebar' );
+    genesis_unregister_layout( 'sidebar-sidebar-content' );
+    genesis_unregister_layout( 'sidebar-content-sidebar' );
+
     add_filter( 'genesis_attr_site-header', 'bsg_attr_site_header' );
     add_filter( 'genesis_attr_title-area', 'bsg_attr_title_area' );
 
