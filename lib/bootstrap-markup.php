@@ -2,6 +2,12 @@
 
 add_action( 'genesis_setup', 'bsg_add_boostrap_classes', 15 ); // Priority 15 ensures it runs after Genesis itself has setup.
 function bsg_add_boostrap_classes() {
+
+    // remove structural wraps
+    // more info about structural wraps at
+    // http://genesistutorials.com/genesis-structural-wraps-creating-a-full-width-genesis-child-theme/
+    remove_theme_support( 'genesis-structural-wraps' );
+
     add_filter( 'genesis_attr_site-header', 'bsg_attr_site_header' );
     add_filter( 'genesis_attr_title-area', 'bsg_attr_title_area' );
 
