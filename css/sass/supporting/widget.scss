@@ -1,0 +1,50 @@
+/* Widget Styling
+------------------------------------------------------------ */
+
+// default widget styles
+.widget {
+    background-color: $grayLight; // Bootstrap Variable
+    color: $white; // Bootstrap Variable
+    padding: $paddingLarge; // Bootstrap Variable
+    @include border-radius($borderRadiusLarge);
+    margin-bottom:30px;
+    h1, h2, h3, h4, h5, h6 {
+        color:#fff;
+    }
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+        list-style-type: none;
+        word-wrap: break-word;
+        margin-bottom:10px;
+
+    }
+}
+
+.widget_calendar {
+    table th,
+    table td {
+        padding:0;
+
+    }
+}
+.widget-title {
+    font-size:24px; line-height:26px;
+    font-weight:bold;
+    margin:0 0 7px;
+}
+// Tribe image widget styles
+.widget_sp_image {
+    background-color: #fff;
+    padding:0;
+    img {
+        margin-bottom:10px;
+    }
+}
+
