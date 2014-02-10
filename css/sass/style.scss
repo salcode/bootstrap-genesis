@@ -2,6 +2,10 @@
 * Sass (http://sass-lang.com/) file to generate theme.css
 */
 
+/* Bootstrap Genesis Theme Variables
+------------------------------------------------------------ */
+@import "supporting/variables";
+
 /* Bootstrap Base 2.3.2
 ------------------------------------------------------------ */
 @import "supporting/bootstrap";

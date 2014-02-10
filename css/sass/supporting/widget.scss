@@ -3,13 +3,14 @@
 
 // default widget styles
 .widget {
-    background-color: $grayLight; // Bootstrap Variable
-    color: $white; // Bootstrap Variable
+    background-color: $widgetBgColor;
+    border: 1px solid $widgetBorderColor;
+    color: $widgetFontColor;
     padding: $paddingLarge; // Bootstrap Variable
-    @include border-radius($borderRadiusLarge);
+    @include border-radius($borderRadiusLarge); // Bootstrap Variable
     margin-bottom:30px;
     h1, h2, h3, h4, h5, h6 {
-        color:#fff;
+        color: $widgetFontColor;
     }
     input,
     textarea,
@@ -25,19 +26,21 @@
         margin-bottom:10px;
 
     }
-}
-
-.widget_calendar {
-    table th,
-    table td {
-        padding:0;
-
+    table {
+        @extend .table;
+        @extend .table-condensed;
+        @media (min-width: 768px) and (max-width: 979px) {
+            th,td { padding: 3px 2px; }
+        }
     }
 }
+
 .widget-title {
-    font-size:24px; line-height:26px;
-    font-weight:bold;
-    margin:0 0 7px;
+    font-size: $baseFontSize * 1.7; // Bootstrap Variable
+    line-height: $baseLineHeight * 1.3;
+}
+.widget_rss {
+    li { margin-bottom:20px; }
 }
 // Tribe image widget styles
 .widget_sp_image {
