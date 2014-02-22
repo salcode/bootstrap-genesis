@@ -20,9 +20,11 @@ function bsg_primary_nav_modifications() {
 }
 
 function bsg_nav_menu_args_filter( $args ) {
-    error_log( '$args=' . print_r( $args, true ) );
 
-    if ( 'primary' === $args['theme_location'] ) {
+    if (
+        'primary' === $args['theme_location'] ||
+        'secondary' === $args['theme_location']
+    ) {
         $args['depth'] = 2;
         $args['menu_class'] = 'nav';
         $args['walker'] = new wp_bootstrap_navwalker();
