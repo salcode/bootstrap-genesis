@@ -34,20 +34,39 @@ function bsg_nav_menu_args_filter( $args ) {
 }
 
 function bsg_nav_menu_markup_filter( $html, $args ) {
-    return '<div class="navbar">' .
+
+    $output = '<div class="navbar">' .
         '<div class="navbar-inner">' .
-            '<div class="container-fluid">' .
-                '<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">' .
+            '<div class="container-fluid">';
+
+                // only include blog name and description in the nav
+                // if it is the primary nav location
+                if ( 'primary' === $args->theme_location ) {
+                    $output .= '<a class="brand" id="logo" title="' .
+                        esc_attr( get_bloginfo( 'description' ) ) .
+                        '" href="' .
+                            esc_url( home_url( '/' ) ) .
+                    '">';
+                        $output .= get_bloginfo( 'name' );
+                    $output .= '</a>';
+                }
+
+                $output .= '<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="';
+                    $output .= '.nav-collapse' . sanitize_html_class( '-' . $args->theme_location );
+                    $output .= '">' .
                     '<span class="icon-bar"></span>' .
                     '<span class="icon-bar"></span>' .
                     '<span class="icon-bar"></span>' .
-                '</button>' .
-                //'<a class="brand" id="logo" title="Programming, parenting, and an abundance of other topics" href="http://salferrarello.com">Sal Ferrarello</a>' .
-                '<div class="nav-collapse collapse">' .
-                    $html .
+                '</button>';
+                $output .= '<div class="nav-collapse collapse ';
+                    $output .= 'nav-collapse' . sanitize_html_class( '-' . $args->theme_location );
+                $output .= '">';
+                    $output .= $html .
                 '</div>' .
             '</div>' .
         '</div>' .
     '</div>';
+
+    return $output;
 }
 
