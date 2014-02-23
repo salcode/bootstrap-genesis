@@ -6,6 +6,7 @@ add_action( 'genesis_setup', 'bsg_bootstrap_markup_setup', 15 );
 function bsg_bootstrap_markup_setup() {
 
     // add bootstrap classes
+    add_filter( 'genesis_attr_site-header',         'bsg_add_markup_class', 10, 2 );
     add_filter( 'genesis_attr_site-inner',          'bsg_add_markup_class', 10, 2 );
     add_filter( 'genesis_attr_content-sidebar-wrap','bsg_add_markup_class', 10, 2 );
     add_filter( 'genesis_attr_content',             'bsg_add_markup_class', 10, 2 );
