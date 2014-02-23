@@ -21,7 +21,12 @@ function srf_bootstrap_genesis_featured_image() {
     $attr = array(
         'class' => 'archive-featured-image'
     );
-    the_post_thumbnail( 'blog-featured-image', $attr );
+
+    $permalink = get_permalink();
+
+    echo ( $permalink ? "<a href=\"{$permalink}\">" : "" );
+        the_post_thumbnail( 'blog-featured-image', $attr );
+    echo ( $permalink ? "</a>" : "" );
 }
 
 
