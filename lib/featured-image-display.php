@@ -9,6 +9,8 @@ function bsg_featured_image_display() {
     add_action( 'genesis_before_content', 'srf_bootstrap_genesis_featured_image_above_content' );
 }
 
+// display featured image within the main container (next to sidebar)
+// on non-singular pages (potentially multiple featured images on these pages)
 function srf_bootstrap_genesis_featured_image() {
     global $post;
 
@@ -23,7 +25,8 @@ function srf_bootstrap_genesis_featured_image() {
 }
 
 
-// Move the featured image out above all of the content
+// display featured image above the main container and sidebar
+// on singular pages (only one featured image on these pages)
 function srf_bootstrap_genesis_featured_image_above_content() {
     if ( !is_singular() || !has_post_thumbnail()) {
         // abort if NOT singular or no thumbnail
