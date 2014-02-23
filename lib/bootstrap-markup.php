@@ -19,6 +19,7 @@ function bsg_bootstrap_markup_setup() {
 function bsg_add_markup_class( $attr, $context ) {
     // default classes to add
     $classes_to_add = apply_filters ('bsg-classes-to-add', array(
+        'site-header'       => 'container',
         'site-inner'        => 'container',
         'content-sidebar-wrap'      => 'row',
         'content'           => 'span9',
