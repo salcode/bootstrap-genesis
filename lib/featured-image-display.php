@@ -27,6 +27,8 @@ function srf_bootstrap_genesis_featured_image() {
     }
 
     echo ( $permalink ? "<a href=\"{$permalink}\">" : "" );
-        the_post_thumbnail( 'bsg-featured-image', $featured_image_attr );
+        $size = apply_filters( 'bsg-featured-image', 'bsg-featured-image' );
+        $featured_image_attr = apply_filters( 'bsg-featured-image-attr', $featured_image_attr );
+        the_post_thumbnail( $size, $featured_image_attr );
     echo ( $permalink ? "</a>" : "" );
 }
