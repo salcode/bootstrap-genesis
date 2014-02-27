@@ -23,6 +23,7 @@ function bsg_add_markup_class( $attr, $context ) {
         array(
             'site-header'       => 'container',
             'site-inner'        => 'container',
+            'site-footer'       => 'container',
             'content-sidebar-wrap'      => 'row',
             'content'           => 'span9',
             'sidebar-primary'   => 'span3',
