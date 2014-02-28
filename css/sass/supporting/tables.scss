@@ -1,0 +1,7 @@
+/* Default table styling uses Bootstrap .table-bordered
+------------------------------------------------------------ */
+
+table {
+    @extend .table;
+    @extend .table-bordered;
+}
