@@ -28,3 +28,9 @@
 /* WordPress Responsive Styles
 ------------------------------------------------------------ */
 @import "supporting/wordpress-responsive";
+
+
+/* Long nonbreaking path name support
+ * see http://wptest.io/demo/non-breaking-text/
+------------------------------------------------------------ */
+@import "supporting/long-nonbreaking-path-name-support";
