@@ -11,7 +11,7 @@ function bsg_remove_default_stylesheet() {
 }
 
 function bsg_enqueue_css_js() {
-    $version = '20130101';
+    $version = wp_get_theme()->Version;
 
     // wp_enqueue_style( $handle, $src, $deps, $ver, $media );
     wp_enqueue_style( 'bsg_combined_css', get_stylesheet_directory_uri() . '/css/style.min.css', array(), $version );

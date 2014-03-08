@@ -9,7 +9,7 @@ function bsg_responsive_viewport_setup() {
     // and does NOT have a filter to modify, therefore we're using our own code
     //add_theme_support( 'genesis-responsive-viewport' );
     add_action( 'genesis_meta', 'bsg_responsive_viewport');
-} // bsg_bootstrap_markup_setup()
+}
 
 // add viewport for responsive
 // http://stackoverflow.com/questions/9386429/simple-bootstrap-page-is-not-responsive-on-the-iphone#answer-10120831

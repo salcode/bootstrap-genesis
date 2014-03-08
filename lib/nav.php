@@ -38,6 +38,18 @@ function bsg_nav_menu_markup_filter( $html, $args ) {
     $output = '<div class="navbar">' .
         '<div class="navbar-inner">' .
             '<div class="container-fluid">';
+                // only include blog name and description in the nav
+                // if it is the primary nav location
+                if ( 'primary' === $args->theme_location ) {
+                    $output .= '<a class="brand" id="logo" title="' .
+                        esc_attr( get_bloginfo( 'description' ) ) .
+                        '" href="' .
+                            esc_url( home_url( '/' ) ) .
+                    '">';
+                        $output .= get_bloginfo( 'name' );
+                    $output .= '</a>';
+                }
+
                 $output .= '<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="';
                     $output .= '.nav-collapse' . sanitize_html_class( '-' . $args->theme_location );
                     $output .= '">' .
@@ -45,7 +57,7 @@ function bsg_nav_menu_markup_filter( $html, $args ) {
                     '<span class="icon-bar"></span>' .
                     '<span class="icon-bar"></span>' .
                 '</button>';
-                //'<a class="brand" id="logo" title="Programming, parenting, and an abundance of other topics" href="http://salferrarello.com">Sal Ferrarello</a>' .
+
                 $output .= '<div class="nav-collapse collapse ';
                     $output .= 'nav-collapse' . sanitize_html_class( '-' . $args->theme_location );
                 $output .= '">';

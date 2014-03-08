@@ -1,0 +1,7 @@
+/* based on http://wptest.io/demo/non-breaking-text/ */
+
+.breadcrumb,
+article {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}

@@ -1,0 +1,12 @@
+/* Pagination - accomodate .pagination-omission
+------------------------------------------------------------ */
+
+.pagination-omission {
+    float: left; // Collapse white-space
+    padding: 4px 12px;
+    line-height: $baseLineHeight;
+    text-decoration: none;
+    background-color: $paginationBackground;
+    border: 1px solid $paginationBorder;
+    border-left-width: 0;
+}
