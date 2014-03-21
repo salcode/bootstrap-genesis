@@ -15,8 +15,9 @@ Change log
 
 2014-03-21 Add *Skip to Main Content* link thanks
 to the guidance of @davidakennedy  
-2014-03-21 Add SCSS to better render Bootstrap 
-hero unit on small screens
+2014-03-21 Add SCSS to better render Bootstrap
+hero unit on small screens  
+2014-03-21 Add SCSS for comment styling
 
 Future Features
 ===============
