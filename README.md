@@ -13,6 +13,7 @@ Low IE Browser Support
 Change log
 ==========
 
+2014-03-25 Version bump to 0.4
 2014-03-21 Add *Skip to Main Content* link thanks
 to the guidance of @davidakennedy  
 2014-03-21 Add SCSS to better render Bootstrap
