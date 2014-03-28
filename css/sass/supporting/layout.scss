@@ -1,0 +1,13 @@
+/*
+Layout Styling */
+
+body.sidebar-content {
+    .content-sidebar-wrap {
+        main {
+            float: right;
+            @media (max-width: 767px) {
+              float: none;
+            }
+        }
+    }
+}
