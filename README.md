@@ -4,7 +4,7 @@ WordPress Genesis Child Theme setup to use Bootstrap, Sass, and Grunt
 
 Contributors
 ==================================
-[@salcode](https://github.com/salcode), [@dustyndoyle](https://github.com/dustyndoyle)
+[@salcode](https://github.com/salcode), [@dustyndoyle](https://github.com/dustyndoyle), [@codenameEli](https://github.com/codenameeli)
 
 License
 ==================================
