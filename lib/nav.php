@@ -5,6 +5,9 @@ add_action( 'genesis_setup', 'bsg_primary_nav_modifications', 15 );
 
 
 function bsg_primary_nav_modifications() {
+	if ( class_exists('UberMenuStandard') ) {
+		return;
+	}
     // remove primary & secondary nav from default position
     remove_action( 'genesis_after_header', 'genesis_do_nav' );
     remove_action( 'genesis_after_header', 'genesis_do_subnav' );
