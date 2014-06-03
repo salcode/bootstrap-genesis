@@ -1,0 +1,13 @@
+/* ----------------------------------------------
+  Google Maps API v3
+  CSS Fixes for conflicts with Bootstrap 2.3.2 & IE
+---------------------------------------------------- */
+MAPS BOOTSTRAP FIX
+div.gm-style img {
+  max-width: none!important;
+}
+
+// WRAPPING TEXT IN BOTTOM RIGHT-HAND CORNER IN IE
+div.gm-style .gmnoprint { 
+  word-wrap: normal!important; 
+}

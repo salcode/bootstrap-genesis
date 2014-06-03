@@ -59,3 +59,8 @@
 /* Skip to Main Content - Accessibility Link
 ------------------------------------------------------------ */
 @import "supporting/skip-to-main-content";
+
+/* Google Maps API v3 
+ * CSS Fixes for conflicts with Bootstrap 2.3.2 & IE
+------------------------------------------------------------ */
+@import "supporting/google-maps";
