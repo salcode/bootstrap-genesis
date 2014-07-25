@@ -2,17 +2,16 @@ bootstrap-genesis
 =================
 WordPress Genesis Child Theme setup to use Bootstrap, Sass, and Grunt
 
+
 Contributors
 ----------------------------------
 [@salcode](https://github.com/salcode), [@dustyndoyle](https://github.com/dustyndoyle), [@codenameEli](https://github.com/codenameeli)
 
-License
-----------------------------------
-GPL
 
 Why Bootstrap 2.3.2 ( Why Not 3 )?
 ----------------------------------
 Low IE Browser Support
+
 
 Menu Modifications
 ----------------------------------
@@ -20,6 +19,12 @@ The menu is modified to use Bootstrap markup and the menus are placed at the top
 of the page by default.
 All menu modifications are removed, when the [Ubermenu](http://wpmegamenu.com/)
 plugin is present
+
+
+License
+----------------------------------
+GPL
+
 
 Change log
 ----------------------------------
@@ -31,6 +36,7 @@ to the guidance of @davidakennedy
 2014-03-21 Add SCSS to better render Bootstrap
 hero unit on small screens  
 2014-03-21 Add SCSS for comment styling
+
 
 Future Features
 ----------------------------------
