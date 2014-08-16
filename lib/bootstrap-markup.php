@@ -33,14 +33,24 @@ function bsg_add_markup_class( $attr, $context ) {
         $attr
     );
 
-    // lookup class from $classes_to_add
-    $class = isset( $classes_to_add[ $context ] ) ? $classes_to_add[ $context ] : '';
+    // populate $classes_array based on $classes_to_add
+    if ( isset( $classes_to_add[ $context ] ) ) {
+        if ( is_string( $classes_to_add[ $context ] ) ) {
+            $classes_array = explode( ' ', $classes_to_add[ $context ] );
+        } elseif ( is_array( $classes_to_add[ $context ] ) ) {
+            $classes_array = $classes_to_add[ $context ];
+        } else {
+            $classes_array = array();
+        }
+    }
 
     // apply any filters to modify the class
-    $class = apply_filters( 'bsg-add-class', $class, $context, $attr );
+    $classes_array = apply_filters( 'bsg-add-class', $classes_array, $context, $attr );
+
+    $classes_array = array_map( 'sanitize_html_class', $classes_array );
 
     // append the class(es) string (e.g. 'span9 custom-class1 custom-class2')
-    $attr['class'] .= ' ' . sanitize_html_class( $class );
+    $attr['class'] .= ' ' . implode( ' ', $classes_array );
 
     return $attr;
 }
