@@ -34,9 +34,9 @@ function bsg_add_markup_class( $attr, $context ) {
     );
 
     // populate $classes_array based on $classes_to_add
-    $value = isset( $classes_to_add[ $context ] ) ? $classes_to_add[ $context ] : array() );
+    $value = isset( $classes_to_add[ $context ] ) ? $classes_to_add[ $context ] : array();
 
-    if ( is_array( $value ) {
+    if ( is_array( $value ) ) {
         $classes_array = $value;
     } else {
         $classes_array = explode( ' ', (string) $value );
