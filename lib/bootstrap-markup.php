@@ -18,7 +18,7 @@ function bsg_bootstrap_markup_setup() {
 
 function bsg_add_markup_class( $attr, $context ) {
     // default classes to add
-    $classes_to_add = apply_filters ('bsg-classes-to-add', 
+    $classes_to_add = apply_filters ('bsg-classes-to-add',
         // default bootstrap markup values
         array(
             'site-header'       => 'container',
@@ -34,14 +34,12 @@ function bsg_add_markup_class( $attr, $context ) {
     );
 
     // populate $classes_array based on $classes_to_add
-    if ( isset( $classes_to_add[ $context ] ) ) {
-        if ( is_string( $classes_to_add[ $context ] ) ) {
-            $classes_array = explode( ' ', $classes_to_add[ $context ] );
-        } elseif ( is_array( $classes_to_add[ $context ] ) ) {
-            $classes_array = $classes_to_add[ $context ];
-        } else {
-            $classes_array = array();
-        }
+    $value = isset( $classes_to_add[ $context ] ) ? $classes_to_add[ $context ] : array() );
+
+    if ( is_array( $value ) {
+        $classes_array = $value;
+    } else {
+        $classes_array = explode( ' ', (string) $value );
     }
 
     // apply any filters to modify the class
