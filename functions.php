@@ -9,4 +9,8 @@
  *
  * https://gist.github.com/theandystratton/5924570
  */
-foreach ( glob( dirname( __FILE__ ) . '/lib/*.php' ) as $file ) { include $file; }
+add_action( 'genesis_setup', 'bsg_load_lib_files', 15 );
+
+function bsg_load_lib_files() {
+    foreach ( glob( dirname( __FILE__ ) . '/lib/*.php' ) as $file ) { include $file; }
+}

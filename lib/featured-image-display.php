@@ -1,11 +1,7 @@
 <?php
 
-add_action('genesis_setup','bsg_featured_image_display', 15);
-
-function bsg_featured_image_display() {
-    // image with post (disabled on single post / single page )
-    add_action( 'genesis_entry_header', 'srf_bootstrap_genesis_featured_image', 0);
-}
+// image with post (disabled on single post / single page )
+add_action( 'genesis_entry_header', 'srf_bootstrap_genesis_featured_image', 0);
 
 function srf_bootstrap_genesis_featured_image() {
     global $post;
