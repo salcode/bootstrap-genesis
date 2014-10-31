@@ -1,26 +1,20 @@
 <?php
 
-// Priority 15 ensures it runs after Genesis itself has setup.
-add_action( 'genesis_setup', 'bsg_primary_nav_modifications', 15 );
-
-
-function bsg_primary_nav_modifications() {
-	if ( class_exists('UberMenuStandard') ) {
-		return;
-	}
-    // remove primary & secondary nav from default position
-    remove_action( 'genesis_after_header', 'genesis_do_nav' );
-    remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-    // add primary & secondary nav to top of the page
-    add_action( 'genesis_before', 'genesis_do_nav' );
-    add_action( 'genesis_before', 'genesis_do_subnav' );
-
-    // filter menu args for bootstrap walker and other settings
-    add_filter( 'wp_nav_menu_args', 'bsg_nav_menu_args_filter' );
-
-    // add bootstrap markup around the nav
-    add_filter( 'wp_nav_menu', 'bsg_nav_menu_markup_filter', 10, 2 );
+if ( class_exists('UberMenuStandard') ) {
+    return;
 }
+// remove primary & secondary nav from default position
+remove_action( 'genesis_after_header', 'genesis_do_nav' );
+remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+// add primary & secondary nav to top of the page
+add_action( 'genesis_before', 'genesis_do_nav' );
+add_action( 'genesis_before', 'genesis_do_subnav' );
+
+// filter menu args for bootstrap walker and other settings
+add_filter( 'wp_nav_menu_args', 'bsg_nav_menu_args_filter' );
+
+// add bootstrap markup around the nav
+add_filter( 'wp_nav_menu', 'bsg_nav_menu_markup_filter', 10, 2 );
 
 function bsg_nav_menu_args_filter( $args ) {
 

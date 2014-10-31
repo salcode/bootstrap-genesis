@@ -1,14 +1,9 @@
 <?php
 
-// Priority 15 ensures it runs after Genesis itself has setup.
-add_action( 'genesis_setup', 'bsg_ie_conditional_comments_setup', 15 );
-
-function bsg_ie_conditional_comments_setup() {
-    // remove default doctype
-    // replace doctype/opening html tag with conditional comments doctype/opening html tag
-    remove_action(  'genesis_doctype', 'genesis_do_doctype' );
-    add_action(     'genesis_doctype', 'bsg_conditional_comments' );
-}
+// remove default doctype
+// replace doctype/opening html tag with conditional comments doctype/opening html tag
+remove_action(  'genesis_doctype', 'genesis_do_doctype' );
+add_action(     'genesis_doctype', 'bsg_conditional_comments' );
 
 function bsg_conditional_comments() {
    ?>

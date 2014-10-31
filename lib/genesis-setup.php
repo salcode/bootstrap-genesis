@@ -1,16 +1,11 @@
 <?php
 
-// Priority 15 ensures it runs after Genesis itself has setup.
-add_action( 'genesis_setup', 'bsg_genesis_setup', 15 );
+// http://my.studiopress.com/snippets/html5/
+// Add HTML5 markup structure
+add_theme_support( 'html5' );
 
-function bsg_genesis_setup() {
-    // http://my.studiopress.com/snippets/html5/
-    // Add HTML5 markup structure
-    add_theme_support( 'html5' );
-
-    // Remove item(s) from genesis admin screens
-    add_action( 'genesis_admin_before_metaboxes', 'bsg_remove_genesis_theme_metaboxes' );
-}
+// Remove item(s) from genesis admin screens
+add_action( 'genesis_admin_before_metaboxes', 'bsg_remove_genesis_theme_metaboxes' );
 
 /**
  * Remove selected Genesis metaboxes from the Theme Settings and SEO Settings pages.
