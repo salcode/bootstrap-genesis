@@ -121,7 +121,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', ['sass:dev', 'uglify:dev']);
 
     // load these tasks (necessary to allow use of sass, watch, and uglify
-    grunt.loadNpmTasks("grunt-contrib-sass");
+    grunt.loadNpmTasks("grunt-sass");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-uglify");
 };
