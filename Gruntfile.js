@@ -96,7 +96,7 @@ module.exports = function(grunt) {
         sass: {
             // `grunt sass:dev`
             dev: {
-                options: { style: "nested", sourceMap: true },
+                options: { outputStyle: "nested", sourceMap: true },
                 files: sass_files,
             },
             // `grunt sass:prod`
