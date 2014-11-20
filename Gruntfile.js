@@ -96,12 +96,12 @@ module.exports = function(grunt) {
         sass: {
             // `grunt sass:dev`
             dev: {
-                options: { style: "normal" },
+                options: { style: "normal", sourcemap: true },
                 files: sass_files,
             },
             // `grunt sass:prod`
             prod: {
-                options: { style: "compressed" },
+                options: { style: "compressed", sourcemap: true },
                 files: sass_files,
             }
 
