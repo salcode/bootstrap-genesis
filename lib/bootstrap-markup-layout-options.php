@@ -19,7 +19,7 @@ function bsg_layout_options_modify_classes_to_add( $classes_to_add ) {
 
     // full-width-content       // supported
     if ( 'full-width-content' === $layout ) {
-        $classes_to_add['content'] = 'span12';
+        $classes_to_add['content'] = 'col-sm-12';
     }
 
     // sidebar-content          // not yet supported
