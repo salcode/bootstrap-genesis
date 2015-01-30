@@ -39,11 +39,6 @@ in version control, I use `style.css` only for the theme header information and
 all applied CSS is stored in `css/style.min.css`
 
 
-Why Bootstrap 2.3.2 ( Why Not 3 )?
-----------------------------------
-Low IE Browser Support
-
-
 Menu Modifications
 ----------------------------------
 The menu is modified to use Bootstrap markup and the menus are placed at the top
