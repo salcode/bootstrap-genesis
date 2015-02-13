@@ -36,3 +36,9 @@
         @extend .table-condensed;
     }
 }
+
+.widget_search {
+    .search-query {
+        margin-bottom: 10px;
+    }
+}
