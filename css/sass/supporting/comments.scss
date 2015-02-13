@@ -4,8 +4,8 @@
 .comment-respond,
 .entry-comments,
 .entry-pings {
-	background-color: #fff;
-	margin-bottom: 40px;
+    background-color: #fff;
+    margin-bottom: 40px;
 }
 
 .comment-list,
@@ -16,48 +16,48 @@
 
 .comment-respond a,
 .entry-comments a {
-	border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .comment-content {
-	clear: both;
+    clear: both;
 }
 
 .entry-comments .comment-author {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
-	width: 50%
+    width: 50%
 }
 
 .comment-respond label {
-	display: block;
-	margin-right: 12px;
+    display: block;
+    margin-right: 12px;
 }
 
 .comment-list>li,
 .comment-list .children>li,
 .ping-list>li {
-	list-style-type: none;
+    list-style-type: none;
     margin-top: 24px;
     padding:10px;
 }
 
 li.comment {
-	background-color: $singleCommentBgColor;
-	border: 2px solid #fff;
-	border-right: none;
+    background-color: $singleCommentBgColor;
+    border: 2px solid #fff;
+    border-right: none;
 }
 
 .comment .avatar {
-	margin: 0 16px 24px 0;
+    margin: 0 16px 24px 0;
 }
 
 .entry-pings .reply {
-	display: none;
+    display: none;
 }
 
 li.bypostauthor {
@@ -65,7 +65,7 @@ li.bypostauthor {
 }
 
 .form-allowed-tags {
-	background-color: $singleCommentBgColor;
-	font-size: 14px;
-	padding: 24px;
+    background-color: $singleCommentBgColor;
+    font-size: 14px;
+    padding: 24px;
 }
