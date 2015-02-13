@@ -1,7 +1,6 @@
 bootstrap-genesis
 =================
-WordPress Genesis Child Theme setup to use Bootstrap, Sass, and Grunt
-
+WordPress Genesis Child Theme setup to use Bootstrap 3, Sass, and Grunt.
 
 Contributors
 ----------------------------------
@@ -50,11 +49,3 @@ plugin is present
 License
 ----------------------------------
 GPL
-
-
-Future Features
-----------------------------------
-
-*** Add support for add_theme_support( 'genesis-footer-widgets', num_cols ); ***
-where num_cols is an integer like (2, 3, or 4)
-http://my.studiopress.com/tutorials/add-footer-widgets/
