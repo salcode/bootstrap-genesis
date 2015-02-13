@@ -42,3 +42,10 @@
         margin-bottom: 10px;
     }
 }
+
+// includes ID in selector for specificity
+.widget_calendar #wp-calendar {
+    th, td {
+        padding: 0;
+    }
+}
