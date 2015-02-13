@@ -10,10 +10,8 @@
 
 .comment-list,
 .comment-list .children {
-    margin-left:0;
-}
-.comment-list .children {
-    margin-top:20px;
+    margin: 20px 0 0;
+    padding:0;
 }
 
 .comment-respond a,
@@ -45,7 +43,7 @@
 .ping-list>li {
 	list-style-type: none;
     margin-top: 24px;
-    padding: 20px;
+    padding:10px;
 }
 
 .comment-list>li {
