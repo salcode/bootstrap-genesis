@@ -10,6 +10,11 @@ function srf_bootstrap_genesis_featured_image() {
         return;
     }
 
+    if ( "1" === genesis_get_option( 'content_archive_thumbnail' ) ) {
+        // set in Genesis->Theme Settings->Content Archives "Include the Featured Image?"
+        return;
+    }
+
     $featured_image_attr = array();
 
     if ( is_singular() ) {
