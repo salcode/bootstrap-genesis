@@ -46,12 +46,14 @@ var build_state = 'prod',
     // watch all .scss files in our sass directory
     // for changes
     watched_sass_files = [ 'css/sass/**/*.scss' ],
+    uglify_source_files = [
+        'js/vendor/**/*.js',
+        'js/custom/javascript.js',
+    ],
     uglify_files = {
-        'js/javascript.min.js': [
-            'js/vendor/**/*.js',
-            'js/custom/javascript.js',
-        ]
+        'js/javascript.min.js': uglify_source_files
     },
+
     watched_js_files = [
         'js/vendor/**/*.js',
         'js/custom/*.js',
@@ -91,6 +93,15 @@ module.exports = function(grunt) {
             // `grunt uglify:prod`
             prod: {
                 files: uglify_files
+            },
+            releaseUnmin: {
+                files: {
+                    'js/javascript.js': uglify_source_files
+                },
+                options: {
+                    beautify: true,
+                    mangle: false
+                }
             }
         }, // uglify
         sass: {
@@ -103,9 +114,14 @@ module.exports = function(grunt) {
             prod: {
                 options: { outputStyle: "compressed", sourceMap: true },
                 files: sass_files,
+            },
+            releaseUnmin: {
+                options: { style: "normal" },
+                files: {
+                    "css/style.css": "css/sass/style.scss"
+                },
             }
-
-        } // sass
+        }, // sass
     });
 
     // when `grunt` is run, do the following tasks
