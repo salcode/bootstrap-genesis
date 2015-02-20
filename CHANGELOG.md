@@ -2,6 +2,13 @@
 
 ## [Unreleased][unreleased]
 
+### Changed
+- Archive Featured Images are now controlled by the Genesis Theme Settings page
+/wp-admin/admin.php?page=genesis.  Previously, archive featured images were
+always on.  To turn the featured image on, go to the Content Archives
+section, check "Include the Featured Image?", choose the Image Size
+"bsg-featured-image (1170 x 630)", and Image Alignment "None".
+
 ## [0.6.0] - 2015-02-13
 
 ### Changed
