@@ -41,7 +41,7 @@ margin: 5px 0;
 .wp-caption .wp-caption-text,
     .entry-caption,
     .gallery-caption {
-color: #220e10;
+        color: $galleryCaptionColor;
        font-size: 18px;
        font-style: italic;
        font-weight: 300;
