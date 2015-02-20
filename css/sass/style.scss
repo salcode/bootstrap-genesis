@@ -2,6 +2,10 @@
 * Sass (http://sass-lang.com/) file to generate theme.css
 */
 
+/* Bootstrap Theme File
+------------------------------------------------------------ */
+@import "theme-darkly";
+
 /* Bootstrap Core Override Variables
 ------------------------------------------------------------ */
 @import "supporting/variables-bootstrap-core-override";
