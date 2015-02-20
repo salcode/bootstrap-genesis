@@ -8,6 +8,7 @@
 always on.  To turn the featured image on, go to the Content Archives
 section, check "Include the Featured Image?", choose the Image Size
 "bsg-featured-image (1170 x 630)", and Image Alignment "None".
+- Add new Sass variables $commentBgColor and $galleryCaptionColor
 
 ## [0.6.0] - 2015-02-13
 
