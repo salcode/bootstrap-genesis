@@ -3,6 +3,7 @@
 
 // default widget styles
 .widget {
+    @extend .clearfix;
     background-color: $widgetBgColor;
     border: 1px solid $widgetBorderColor;
     color: $widgetFontColor;
