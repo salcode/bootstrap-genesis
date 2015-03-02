@@ -1,13 +1,96 @@
 /*
 Layout Styling */
 
-body.sidebar-content {
-    .content-sidebar-wrap {
-        main {
-            float: right;
-            @media (max-width: 767px) {
-              float: none;
-            }
-        }
-    }
+.site-inner{
+  @include .container-fixed();
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+.content-sidebar-wrap {
+  @include make-row;
+}
+
+.content-sidebar .content,
+.sidebar-content .content {
+  @include .make-xs-column(12);
+  @include .make-sm-column(8);
+  @include .make-md-column(8);
+  @include .make-lg-column(9);
+}
+.content-sidebar .sidebar-primary,
+.sidebar-content .sidebar-primary {
+  @include .make-xs-column(12);
+  @include .make-sm-column(4);
+  @include .make-md-column(4);
+  @include .make-lg-column(3);
+}
+ 
+.sidebar-content .content  {
+  @include .make-sm-column-push(4);
+  @include .make-md-column-push(4);
+}
+ 
+.sidebar-content .sidebar-primary  {
+  @include .make-sm-column-pull(8);
+  @include .make-md-column-pull(8);
+}
+ 
+.sidebar-content-sidebar .content,
+.content-sidebar-sidebar .content {
+  @include .make-xs-column(12);
+  @include .make-sm-column(6);
+  @include .make-md-column(6);
+  @include .make-lg-column(6);
+}
+ 
+.sidebar-content-sidebar .sidebar-primary,
+.sidebar-content-sidebar .sidebar-secondary,
+.content-sidebar-sidebar .sidebar-primary, 
+.content-sidebar-sidebar .sidebar-secondary  {
+  @include .make-xs-column(12);
+  @include .make-sm-column(3);
+  @include .make-md-column(3);
+  @include .make-lg-column(3);
+}
+ 
+.sidebar-sidebar-content .content  {
+  @include .make-xs-column(12);
+  @include .make-sm-column(6);
+  @include .make-md-column(6);
+  @include .make-lg-column(6);
+}
+.sidebar-sidebar-content .sidebar-primary, 
+.sidebar-sidebar-content .sidebar-secondary  {
+  @include .make-xs-column(12);
+  @include .make-sm-column(3);
+  @include .make-md-column(3);
+  @include .make-lg-column(3);
+}
+.sidebar-sidebar-content .content  {
+  @include .make-sm-column-push(6);
+  @include .make-md-column-push(6);
+}
+.sidebar-sidebar-content .sidebar-primary  {
+  @include .make-sm-column-pull(6);
+  @include .make-md-column-pull(6);
+}
+.sidebar-sidebar-content .sidebar-secondary {
+  @include .make-sm-column-pull(6);
+  @include .make-md-column-pull(6);
+}
+ 
+.sidebar-content-sidebar .content  {
+  @include .make-sm-column-push(3);
+  @include .make-md-column-push(3);
+}
+.sidebar-content-sidebar .sidebar-primary  {
+  @include .make-sm-column-pull(6);
+  @include .make-md-column-pull(6);
 }
