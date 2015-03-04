@@ -11,6 +11,7 @@ section, check "Include the Featured Image?", choose the Image Size
 - Add new Sass variables $commentBgColor and $galleryCaptionColor
 - Change all images to resize responsively by default
 - Add .clearfix behavior to .widget
+- Remove erronous extra closing div in nav markup
 
 ## [0.6.0] - 2015-02-13
 

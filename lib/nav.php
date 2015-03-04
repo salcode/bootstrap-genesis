@@ -57,12 +57,12 @@ EOT;
             $output .= '</a>';
         }
 
-        $output .= '</div>';
+        $output .= '</div>'; // .navbar-header
 
         $output .= "<div class=\"collapse navbar-collapse\" id=\"{$data_target}\">";
             $output .= $html;
         $output .= '</div>'; // .collapse .navbar-collapse
-      $output .= '</div>'; // .navbar-header
+
   $output .= '</div>'; // .container-fluid
 $output .= '</nav>'; // .navbar .navbar-default
 
