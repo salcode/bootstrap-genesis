@@ -24,7 +24,6 @@ overflowing browser window on mobile devices
 - change secondary menu default styles to nav inverse
 - add class .navbar-static-top to both primary and secondary nav
 
-
 ## [0.6.0] - 2015-02-13
 
 ### Changed

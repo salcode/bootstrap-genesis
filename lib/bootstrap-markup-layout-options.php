@@ -22,8 +22,11 @@ function bsg_layout_options_modify_classes_to_add( $classes_to_add ) {
         $classes_to_add['content'] = 'col-sm-12';
     }
 
-    // sidebar-content          // not yet supported
-    // - same markup as content-sidebar with css modifications rather than markup
+    // sidebar-content          // supported
+    if ( 'sidebar-content' === $layout ) {
+        $classes_to_add['content'] = 'col-sm-9 col-sm-push-3';
+        $classes_to_add['sidebar-primary'] = 'col-sm-3 col-sm-pull-9';
+    }
 
     // content-sidebar-sidebar  // not yet supported
 
