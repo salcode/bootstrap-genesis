@@ -12,6 +12,9 @@ section, check "Include the Featured Image?", choose the Image Size
 - Change all images to resize responsively by default
 - Add .clearfix behavior to .widget
 - Remove erronous extra closing div in nav markup
+- Remove Bootstrap Markup from all nav instances other than
+primary and secondary theme locations. This change was introduced to stop
+the Bootstrap markup from being applied to the WP_Widget_Links widget
 
 ## [0.6.0] - 2015-02-13
 

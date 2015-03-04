@@ -32,6 +32,15 @@ function bsg_nav_menu_args_filter( $args ) {
 }
 
 function bsg_nav_menu_markup_filter( $html, $args ) {
+    // only add additional Bootstrap markup to
+    // primary and secondary nav locations
+    if (
+        'primary'   !== $args->theme_location &&
+        'secondary' !== $args->theme_location
+    ) {
+        return $html;
+    }
+
     $data_target = "nav-collapse" . sanitize_html_class( '-' . $args->theme_location );
     $output = <<<EOT
 <nav class="navbar navbar-default">
