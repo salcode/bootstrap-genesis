@@ -12,3 +12,10 @@ object,
 video {
     max-width: 100%;
 }
+
+/* Make sure form elements fit their containers */
+input,
+textarea,
+select {
+    max-width: 100%;
+}

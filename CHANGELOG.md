@@ -15,6 +15,9 @@ section, check "Include the Featured Image?", choose the Image Size
 - Remove Bootstrap Markup from all nav instances other than
 primary and secondary theme locations. This change was introduced to stop
 the Bootstrap markup from being applied to the WP_Widget_Links widget
+- Apply max-width: 100% to form elements anywhere on the page, previously only
+widget form elements were targetted. Fixes bug with Comment textarea
+overflowing browser window on mobile devices
 
 ## [0.6.0] - 2015-02-13
 
