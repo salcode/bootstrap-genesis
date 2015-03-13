@@ -18,6 +18,10 @@ the Bootstrap markup from being applied to the WP_Widget_Links widget
 - Apply max-width: 100% to form elements anywhere on the page, previously only
 widget form elements were targetted. Fixes bug with Comment textarea
 overflowing browser window on mobile devices
+- remove redundant nav tag
+- change secondary menu default styles to nav inverse
+- add class .navbar-static-top to both primary and secondary nav
+
 
 ## [0.6.0] - 2015-02-13
 
