@@ -16,8 +16,8 @@ function bsg_add_markup_class( $attr, $context ) {
     $classes_to_add = apply_filters ('bsg-classes-to-add',
         // default bootstrap markup values
         array(
-            'nav-primary'               => 'navbar navbar-default',
-            'nav-secondary'             => 'navbar navbar-inverse',
+            'nav-primary'               => 'navbar navbar-default navbar-static-top',
+            'nav-secondary'             => 'navbar navbar-inverse navbar-static-top',
             'site-header'               => 'container',
             'site-inner'                => 'container',
             'site-footer'               => 'container',
