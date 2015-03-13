@@ -43,7 +43,6 @@ function bsg_nav_menu_markup_filter( $html, $args ) {
 
     $data_target = "nav-collapse" . sanitize_html_class( '-' . $args->theme_location );
     $output = <<<EOT
-<nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -71,9 +70,7 @@ EOT;
         $output .= "<div class=\"collapse navbar-collapse\" id=\"{$data_target}\">";
             $output .= $html;
         $output .= '</div>'; // .collapse .navbar-collapse
-
+        
   $output .= '</div>'; // .container-fluid
-$output .= '</nav>'; // .navbar .navbar-default
-
     return $output;
 }
