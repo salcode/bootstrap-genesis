@@ -1,8 +1,10 @@
 <?php
 
-// http://my.studiopress.com/snippets/html5/
 // Add HTML5 markup structure
 add_theme_support( 'html5' );
+
+// Remove structural Wraps
+remove_theme_support( 'genesis-structural-wraps' );
 
 // Remove item(s) from genesis admin screens
 add_action( 'genesis_admin_before_metaboxes', 'bsg_remove_genesis_theme_metaboxes' );
