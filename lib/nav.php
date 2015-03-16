@@ -74,3 +74,22 @@ EOT;
     $output .= '</div>'; // .container-fluid
     return $output;
 }
+
+
+function bsg_remove_primary_bottom_margin() {
+?>
+  <style type="text/css">
+  nav.nav-primary.navbar.navbar-default.navbar-static-top {
+      margin-bottom: 0px!important;
+  }
+  </style>
+<?php
+}
+
+
+function bsg_has_nav_menu_primary_secondary_check() {
+  if ( has_nav_menu( 'primary' ) && has_nav_menu( 'secondary' ) ) {
+        add_action('wp_head', 'bsg_remove_primary_bottom_margin');
+  }
+}
+add_action('get_header', 'bsg_has_nav_menu_primary_secondary_check');
