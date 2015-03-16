@@ -1,0 +1,6 @@
+/* fix styles for layered navigation menus */
+
+.nav-primary + .nav-secondary {
+    margin-top: -1 * $navbar-margin-bottom;
+    z-index: $zindex-navbar - 1;
+}
