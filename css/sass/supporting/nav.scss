@@ -1,0 +1,6 @@
+/* fix styles for layered navigation menus */
+
+.nav-primary.navbar.navbar-static-top + .nav-secondary.navbar.navbar-static-top {
+  margin-top: -20px;
+  z-index: auto;
+}
