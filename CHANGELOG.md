@@ -3,6 +3,8 @@
 ## [Unreleased][unreleased]
 
 ### Changed
+- Modify sidebar-content layout to take advantage of Bootstrap
+push/pull classes
 - Remove space between Primary and Secondary Nav when both are used
 - Remove structural `div.wrap` elements
 - Archive Featured Images are now controlled by the Genesis Theme Settings page
