@@ -1,8 +1,10 @@
-# Change Log - refer to http://keepachangelog.com/
+Bootstrap Genesis Theme Change Log
+==================================
 
 ## [Unreleased][unreleased]
 
 ### Changed
+- Add layout option Content Sidebar Sidebar
 - Modify sidebar-content layout to take advantage of Bootstrap
 push/pull classes
 - Remove space between Primary and Secondary Nav when both are used
