@@ -3,6 +3,8 @@
 ## [Unreleased][unreleased]
 
 ### Changed
+- Remove space between Primary and Secondary Nav when both are used
+- Remove structural `div.wrap` elements
 - Archive Featured Images are now controlled by the Genesis Theme Settings page
 /wp-admin/admin.php?page=genesis.  Previously, archive featured images were
 always on.  To turn the featured image on, go to the Content Archives
