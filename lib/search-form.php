@@ -9,7 +9,22 @@ function bsg_search_form( $form, $search_text, $button_text, $label ) {
 
     $value_or_placeholder = ( get_search_query() == '' ) ? 'placeholder' : 'value';
 
-    $form = sprintf( '<form method="get" class="search-form" action="%s" role="search">%s<input type="search" class="search-query" name="s" %s="%s" /> <input type="submit" class="btn" value="%s" /></form>', home_url( '/' ), esc_html( $label ), $value_or_placeholder, esc_attr( $search_text ), esc_attr( $button_text ) );
+$format = <<<EOT
+<form method="get" class="search-form form-inline" action="%s" role="search">
+    <div class="form-group">
+        <label class="sr-only sr-only-focusable" for="bsg-search-form">%s</label>
+        <div class="input-group">
+            <input type="search" class="search-field form-control" id="bsg-search-form" name="s" %s="%s">
+            <span class="input-group-btn">
+                <button type="submit" class="search-submit btn btn-default">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <span class="sr-only">%s</span>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+EOT;
 
-    return $form;
+    return sprintf( $format, home_url( '/' ), esc_html( $label ), $value_or_placeholder, esc_attr( $search_text ), esc_attr( $button_text ) );
 }
