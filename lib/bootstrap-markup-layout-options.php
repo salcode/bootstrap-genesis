@@ -7,7 +7,6 @@
 add_filter('bsg-classes-to-add', 'bsg_modify_classes_based_on_template', 10, 3);
 
 // remove unused layouts
-genesis_unregister_layout( 'sidebar-sidebar-content' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 
 function bsg_layout_options_modify_classes_to_add( $classes_to_add ) {
@@ -35,7 +34,13 @@ function bsg_layout_options_modify_classes_to_add( $classes_to_add ) {
     }
 
 
-    // sidebar-sidebar-content  // not yet supported
+    // sidebar-sidebar-content  // supported
+    if ( 'sidebar-sidebar-content' === $layout ) {
+        $classes_to_add['content'] = 'col-sm-6 col-sm-push-6';
+        $classes_to_add['sidebar-primary'] = 'col-sm-3 col-sm-pull-3';
+        $classes_to_add['sidebar-secondary'] = 'col-sm-3 col-sm-pull-9';
+    }
+
 
     // sidebar-content-sidebar  // not yet supported
 
