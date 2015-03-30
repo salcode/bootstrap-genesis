@@ -1,6 +1,13 @@
 <?php
 
-// modify post content navigation markup
+/**
+ * Apply Bootstrap Styles to Page links when a post has multiple
+ * pages via the <!--nextpage--> tag.
+ *
+ * See https://codex.wordpress.org/Styling_Page-Links
+ *
+ * @since 0.4.0
+ */
 
 // remove default post_content_nav
 remove_action( 'genesis_entry_content', 'genesis_do_post_content_nav', 12 );
@@ -24,7 +31,14 @@ function bsg_wp_link_pages_link( $link ) {
 
 function bsg_do_post_content_nav( $attr ) {
     wp_link_pages( array(
-        'before' => '<div class="bsg-post-content-nav"><p>' . __( 'Pages:', 'genesis' ) . '</p><div class="pagination clearfix"><ul>',
+        'before' => '<div class="bsg-post-content-nav">'
+                . '<p>' . __( 'Pages:', 'genesis' ) . '</p>'
+                . genesis_markup( array(
+                    'html5'   => '<div %s><ul>',
+                    'xhtml'   => '<div %s><ul>',
+                    'context' => 'entry-pagination',
+                    'echo'    => false,
+                ) ),
         'after'  => '</ul></div></div>',
     ) );
 }

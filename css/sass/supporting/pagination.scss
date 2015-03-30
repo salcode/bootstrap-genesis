@@ -1,12 +1,13 @@
 /* Pagination
  * - Genesis Markup assigns class differently than Bootstrap
- * extend extend .pagination to .pagination ul to accomodate
+ * extend .pagination to .bsg-pagination-numeric ul to accomodate
  * - accomodate .pagination-omission, which is an empty li
  * in Genesis, which differs from Bootstrap's markup.
  * In Bootstrap a span inside the li would be preferred
+ * but this solution via CSS is simplier than modifying the markup
  *---------------------------------------------------------- */
 
-.pagination ul {
+.bsg-pagination-numeric ul {
     @extend .pagination;
 }
 .pagination-omission {
