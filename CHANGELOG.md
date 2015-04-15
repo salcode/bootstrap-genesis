@@ -3,7 +3,17 @@ Bootstrap Genesis Theme Change Log
 
 ## [Unreleased][unreleased]
 
+## [0.7.0] - 2015-04-15
+
 ### Changed
+- Remove words "Previous Page" and "Next Page" from numeric pagination
+controls to more closely match Bootstrap defaults
+- Update meta viewport to remove maximum-scale
+- Improve pagination markup to more closely match Bootstrap defaults
+- Add classes to indicate whether pagination area is numeric or
+prev/next ("bsg-pagination-numeric" or "bsg-pagination-prev-next")
+- Improve search form rendering by using Bootstrap markup
+- Remove widget background color, it is now transparent
 - Add layout option Content Sidebar Sidebar
 - Modify sidebar-content layout to take advantage of Bootstrap
 push/pull classes
