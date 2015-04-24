@@ -4,6 +4,9 @@ Bootstrap Genesis Theme Change Log
 ## [Unreleased][unreleased]
 - Add JavaScript to remove html.no-js, which allows CSS targeting for when
 JavaScript is not present
+- Split variables.scss into variables-bootstrap-core-override.scss and
+variables-bootstrap-genesis.scss (see
+https://github.com/salcode/bootstrap-genesis/issues/83)
 
 ## [0.7.0] - 2015-04-15
 

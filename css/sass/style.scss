@@ -2,13 +2,17 @@
 * Sass (http://sass-lang.com/) file to generate theme.css
 */
 
-/* Bootstrap Genesis Theme Variables
+/* Bootstrap Core Override Variables
 ------------------------------------------------------------ */
-@import "supporting/variables";
+@import "supporting/variables-bootstrap-override";
 
 /* Bootstrap Base 3.3.2
 ------------------------------------------------------------ */
 @import "supporting/bootstrap";
+
+/* Bootstrap Genesis Theme Variables
+------------------------------------------------------------ */
+@import "supporting/variables-bootstrap-genesis";
 
 /* Archive/Blog Styling
 ------------------------------------------------------------ */
