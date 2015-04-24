@@ -2,6 +2,7 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Increase comment textarea default width to 100%
 - Improve rendering of "skip to main content" button
 - Add JavaScript to remove html.no-js, which allows CSS targeting for when
 JavaScript is not present
