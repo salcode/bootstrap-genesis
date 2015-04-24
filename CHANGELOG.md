@@ -2,6 +2,7 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Improve rendering of "skip to main content" button
 - Add JavaScript to remove html.no-js, which allows CSS targeting for when
 JavaScript is not present
 - Convert Bootstrap Genesis Sass variables to use core Bootstrap Sass color

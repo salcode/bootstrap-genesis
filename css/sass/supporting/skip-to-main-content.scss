@@ -4,7 +4,7 @@
 .skip-to-main-content {
     position:absolute;
     left:-10000px;
-    top:auto;
+    top:0;
     width:1px;
     height:1px;
     overflow:hidden;
@@ -13,7 +13,7 @@
         width:auto;
         height:auto;
         margin: 10px;
-        z-index: 2;
+        z-index: 999999;
     }
     &:hover {
         text-decoration:underline;
