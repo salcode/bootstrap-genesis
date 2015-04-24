@@ -2,6 +2,8 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Add JavaScript to remove html.no-js, which allows CSS targeting for when
+JavaScript is not present
 
 ## [0.7.0] - 2015-04-15
 
