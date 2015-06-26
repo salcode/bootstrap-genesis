@@ -47,6 +47,26 @@ All menu modifications are removed, when the [Ubermenu](http://wpmegamenu.com/)
 plugin is present
 
 
+How to Update Bootstrap
+----------------------------------
+Here are my notes on updating Bootstrap in this project.
+
+#### Warning
+After updating the Bootstrap files, the Grunt task must be run to update
+`css/style.min.css` and `js/javascript.min.js`.  There are the only two files
+loaded for CSS and JavaScript, all of the other files are the source files
+which are used to create these two minified files.
+
+### Steps
+- Download the latest [Sass version of Bootstrap](https://github.com/twbs/bootstrap-sass)
+- Replace the JavaScript file. Move the new `assets/javascripts/bootstrap.js` to `js/vendor/bootstrap/`
+- Replace the fonts.  Move all files in the new download from `assets/fonts/bootstrap/` to `fonts/bootstrap/`
+- Replace the top level Sass file.  Move the new `assets/stylesheets/_bootstrap.scss` to `css/sass/supporting/bootstrap.scss`
+- Replace the Bootstrap partial and mixin files.  Mall all files in the new download from `assets/stylesheets/bootstrap/` to `css/sass/supporting/bootstrap/`
+
+
+
+
 License
 ----------------------------------
 GPL
