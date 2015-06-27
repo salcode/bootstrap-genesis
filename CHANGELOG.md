@@ -2,6 +2,7 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Update grunt-sass version to ^1.0.0
 - Increase comment textarea default width to 100%
 - Improve rendering of "skip to main content" button
 - Add JavaScript to remove html.no-js, which allows CSS targeting for when
