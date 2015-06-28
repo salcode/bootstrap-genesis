@@ -47,6 +47,23 @@ All menu modifications are removed, when the [Ubermenu](http://wpmegamenu.com/)
 plugin is present
 
 
+Project Goal
+----------------------------------
+This theme was created as my own starting point when building custom
+Genesis child themes using the Bootstrap front-end framework.
+
+The goal is to leverage Bootstrap as much as possible by adding the appropriate
+markup to trigger Bootstrap styling.
+
+Whenever there is a choice between making an adjustment via the markup
+or via Sass/CSS, markup modifications are preferrable.  There are two
+justifications for this:
+
+1. We want to keep the CSS as small as possible for load time
+2. By using Bootstrap Markup we make the Bootstrap integration more transparent
+and easier understand and manipulate.
+
+
 How to Update Bootstrap
 ----------------------------------
 Here are my notes on updating Bootstrap in this project.
