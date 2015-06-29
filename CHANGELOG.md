@@ -2,6 +2,7 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Target table styling within posts (inside .entry)
 - Add respository field to package.json to resolve warning
 - Update grunt-sass version to ^1.0.0
 - Increase comment textarea default width to 100%
