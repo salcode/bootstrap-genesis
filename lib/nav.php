@@ -56,13 +56,7 @@ EOT;
         // only include blog name and description in the nav
         // if it is the primary nav location
         if ( 'primary' === $args->theme_location ) {
-            $output .= '<a class="navbar-brand" id="logo" title="' .
-                esc_attr( get_bloginfo( 'description' ) ) .
-                '" href="' .
-                    esc_url( home_url( '/' ) ) .
-            '">';
-                $output .= get_bloginfo( 'name' );
-            $output .= '</a>';
+            $output .= apply_filters( 'bsg_navbar_brand', bsg_navbar_brand_markup() );
         }
 
         $output .= '</div>'; // .navbar-header
@@ -72,5 +66,17 @@ EOT;
         $output .= '</div>'; // .collapse .navbar-collapse
 
     $output .= '</div>'; // .container-fluid
+    return $output;
+}
+
+function bsg_navbar_brand_markup() {
+    $output = '<a class="navbar-brand" id="logo" title="' .
+        esc_attr( get_bloginfo( 'description' ) ) .
+        '" href="' .
+            esc_url( home_url( '/' ) ) .
+    '">';
+        $output .= get_bloginfo( 'name' );
+    $output .= '</a>';
+
     return $output;
 }
