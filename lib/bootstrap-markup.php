@@ -10,6 +10,7 @@ add_filter( 'genesis_attr_content',             'bsg_add_markup_class', 10, 2 );
 add_filter( 'genesis_attr_sidebar-primary',     'bsg_add_markup_class', 10, 2 );
 add_filter( 'genesis_attr_sidebar-secondary',   'bsg_add_markup_class', 10, 2 );
 add_filter( 'genesis_attr_archive-pagination',  'bsg_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_entry-content',       'bsg_add_markup_class', 10, 2 );
 add_filter( 'genesis_attr_entry-pagination',    'bsg_add_markup_class', 10, 2 );
 add_filter( 'genesis_attr_site-footer',         'bsg_add_markup_class', 10, 2 );
 
@@ -27,6 +28,7 @@ function bsg_add_markup_class( $attr, $context ) {
             'content'                   => 'col-sm-9',
             'sidebar-primary'           => 'col-sm-3',
             'archive-pagination'        => 'clearfix',
+            'entry-content'             => 'clearfix',
             'entry-pagination'          => 'clearfix bsg-pagination-numeric',
         ),
         $context,
