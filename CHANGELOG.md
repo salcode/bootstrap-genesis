@@ -2,6 +2,7 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Add .clearfix to .entry-content
 - Update grunt-contrib-uglify version to ^0.9.0
 - Target table styling within posts (inside .entry)
 - Add respository field to package.json to resolve warning
