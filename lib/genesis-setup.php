@@ -9,6 +9,9 @@ remove_theme_support( 'genesis-structural-wraps' );
 // Remove item(s) from genesis admin screens
 add_action( 'genesis_admin_before_metaboxes', 'bsg_remove_genesis_theme_metaboxes' );
 
+// Remove item(s) from genesis customizer
+add_action( 'customize_register', 'bsg_remove_genesis_customizer_controls', 20 );
+
 /**
  * Remove selected Genesis metaboxes from the Theme Settings and SEO Settings pages.
  *
@@ -36,3 +39,13 @@ function bsg_remove_genesis_theme_metaboxes( $hook ) {
     //remove_meta_box( 'genesis-seo-settings-archives',   $hook, 'main' );
 }
 
+/**
+ * Filter to remove selected Genesis Customizer Menu controls
+ *
+ * @param instance of WP_Customize_Manager $wp_customize
+ */
+function bsg_remove_genesis_customizer_controls( $wp_customize ) {
+    // remove Site Title/Logo: Dynamic Text or Image Logo option from Customizer
+    $wp_customize->remove_control( 'blog_title' );
+    return $wp_customize;
+}

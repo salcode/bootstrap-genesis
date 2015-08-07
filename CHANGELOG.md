@@ -2,6 +2,7 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Remove site title/logo option from Customizer
 - Add filter to .navbar-brand in primary nav for logo
 - Add .clearfix to .entry-content
 - Update grunt-contrib-uglify version to ^0.9.0
