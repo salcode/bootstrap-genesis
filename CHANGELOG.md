@@ -2,6 +2,7 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [0.8.1] - 2015-08-10
+- Update Bootstrap files to 3.3.5
 - Remove site title/logo option from Customizer
 - Add filter to .navbar-brand in primary nav for logo
 - Add .clearfix to .entry-content
