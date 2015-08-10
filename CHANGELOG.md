@@ -1,6 +1,8 @@
 Bootstrap Genesis Theme Change Log
 ==================================
 
+## [Unreleased][unreleased]
+
 ## [0.8.2] - 2015-08-10
 - Update Bootstrap files to 3.3.5
 - Remove site title/logo option from Customizer
