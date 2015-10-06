@@ -4,3 +4,9 @@
     margin-top: -1 * $navbar-margin-bottom;
     z-index: $zindex-navbar - 1;
 }
+
+/* Display Bootstrap Nav Secondary Items even when JavaScript is disabled */
+.no-js .menu-item-has-children:hover .dropdown-menu,
+.no-js .menu-item-has-children:focus .dropdown-menu {
+    display: block;
+}

@@ -2,6 +2,8 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Add CSS to display secondary level Bootstrap Nav items when JavaScript is
+disabled
 - Modify check for UberMenu plugin to additionally look for `UberMenu` class
 
 ## [0.8.2] - 2015-08-10
