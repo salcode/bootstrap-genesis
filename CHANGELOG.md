@@ -2,6 +2,7 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+- Modify check for UberMenu plugin to additionally look for `UberMenu` class
 
 ## [0.8.2] - 2015-08-10
 - Update Bootstrap files to 3.3.5

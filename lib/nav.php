@@ -1,6 +1,9 @@
 <?php
 
-if ( class_exists('UberMenuStandard') ) {
+if (
+    class_exists('UberMenu')
+    || class_exists('UberMenuStandard')
+) {
     return;
 }
 // remove primary & secondary nav from default position
