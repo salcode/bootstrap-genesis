@@ -21,31 +21,35 @@ function bsg_layout_options_modify_classes_to_add( $classes_to_add ) {
 
     // sidebar-content          // supported
     if ( 'sidebar-content' === $layout ) {
-        $classes_to_add['content'] = 'col-sm-9 col-sm-push-3';
-        $classes_to_add['sidebar-primary'] = 'col-sm-3 col-sm-pull-9';
+        $classes_to_add['content'] = 'col-sm-8 col-sm-push-4 col-md-9 col-md-push-3';
+        $classes_to_add['sidebar-primary'] = 'col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9';
     }
 
     // content-sidebar-sidebar  // supported
     if ( 'content-sidebar-sidebar' === $layout ) {
-        $classes_to_add['content'] = 'col-sm-6';
-        $classes_to_add['sidebar-primary'] = 'col-sm-3';
-        $classes_to_add['sidebar-secondary'] = 'col-sm-3';
+        $classes_to_add['content'] = 'col-sm-4';
+        $classes_to_add['sidebar-primary'] = 'col-sm-4';
+        $classes_to_add['sidebar-secondary'] = 'col-sm-4';
     }
 
 
     // sidebar-sidebar-content  // supported
     if ( 'sidebar-sidebar-content' === $layout ) {
-        $classes_to_add['content'] = 'col-sm-6 col-sm-push-6';
-        $classes_to_add['sidebar-primary'] = 'col-sm-3 col-sm-pull-3';
-        $classes_to_add['sidebar-secondary'] = 'col-sm-3 col-sm-pull-9';
+        $classes_to_add['content'] = 'col-sm-4 col-sm-push-8';
+        $classes_to_add['sidebar-primary'] = 'col-sm-4';
+        $classes_to_add['sidebar-secondary'] = 'col-sm-4 col-sm-pull-8';
+
+        // $classes_to_add['content'] = 'col-sm-6 col-sm-push-6';
+        // $classes_to_add['sidebar-primary'] = 'col-sm-3 col-sm-pull-3';
+        // $classes_to_add['sidebar-secondary'] = 'col-sm-3 col-sm-pull-9';
     }
 
 
     // sidebar-content-sidebar  // supported
     if ( 'sidebar-content-sidebar' === $layout ) {
-        $classes_to_add['content'] = 'col-sm-6 col-sm-push-3';
-        $classes_to_add['sidebar-primary'] = 'col-sm-3 col-sm-push-3';
-        $classes_to_add['sidebar-secondary'] = 'col-sm-3 col-sm-pull-9';
+        $classes_to_add['content'] = 'col-sm-4 col-sm-push-4';
+        $classes_to_add['sidebar-primary'] = 'col-sm-4 col-sm-push-4';
+        $classes_to_add['sidebar-secondary'] = 'col-sm-4 col-sm-pull-8';
     }
 
     return $classes_to_add;
