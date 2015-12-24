@@ -43,7 +43,7 @@ function bsg_genesis_prev_next_posts_nav() {
 
 	$nav = genesis_markup( array(
 		'html5'   => '<nav %s><ul class="pager">',
-		'xhtml'   => '<div class="navigation">',
+		'xhtml'   => '<div class="navigation"><ul class="pager">',
 		'context' => 'archive-pagination',
 		'echo'    => false,
 	) );
