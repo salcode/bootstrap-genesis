@@ -50,7 +50,7 @@ function bsg_genesis_prev_next_posts_nav() {
 
 	$nav .= $prev;
 	$nav .= $next;
-	$nav .= '</ul></nav>';
+	$nav .= genesis_html5() ? '</ul></nav>' : '</ul></div>';
 
 	if ( $prev || $next )
 		echo $nav;
