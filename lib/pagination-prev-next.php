@@ -19,6 +19,7 @@ add_action( 'genesis_after_endwhile', 'bsg_genesis_posts_nav' );
  * @since 0.7.0
  */
 function bsg_genesis_posts_nav() {
+    echo '<div class="clearfix"></div>';
     if ( 'numeric' === genesis_get_option( 'posts_nav' ) ) {
 		genesis_numeric_posts_nav();
     } else {
