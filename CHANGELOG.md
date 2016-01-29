@@ -6,6 +6,7 @@ Bootstrap Genesis Theme Change Log
 - Add CSS to display secondary level Bootstrap Nav items when JavaScript is
 disabled
 - Add header 'X-UA-Compatible: IE=edge,chrome=1' to all responses
+- Add screen reader CSS classes for better accessibility
 
 ### Changed
 - Modify check for UberMenu plugin to additionally look for `UberMenu` class
