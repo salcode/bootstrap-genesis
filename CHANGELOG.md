@@ -13,6 +13,7 @@ disabled
 
 ### Fixed
 - Correct wrong Previous/Next Post Links Markup when using XHTML
+- Correct wrong Bootstrap version number is style.css
 
 ## [0.8.2] - 2015-08-10
 - Update Bootstrap files to 3.3.5
