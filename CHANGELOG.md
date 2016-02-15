@@ -2,11 +2,16 @@ Bootstrap Genesis Theme Change Log
 ==================================
 
 ## [Unreleased][unreleased]
+### Added
 - Add CSS to display secondary level Bootstrap Nav items when JavaScript is
 disabled
-- Modify check for UberMenu plugin to additionally look for `UberMenu` class
-- Correct wrong Previous/Next Post Links Markup when using XHTML
 - Add header 'X-UA-Compatible: IE=edge,chrome=1' to all responses
+
+### Changed
+- Modify check for UberMenu plugin to additionally look for `UberMenu` class
+
+### Fixed
+- Correct wrong Previous/Next Post Links Markup when using XHTML
 
 ## [0.8.2] - 2015-08-10
 - Update Bootstrap files to 3.3.5
