@@ -5,7 +5,9 @@
  * @package salcode/boostrap-genesis
  */
 
-add_action( 'send_headers', 'bsg_add_header_xua' );
+if ( ! is_admin() ) {
+    add_action( 'send_headers', 'bsg_add_header_xua' );
+}
 
 /**
  * Send X-UA-Compatible header
