@@ -1,0 +1,14 @@
+/* Genesis accessibility support for screen readers
+------------------------------------------------------------ */
+
+.screen-reader-text,
+.screen-reader-text span {
+  @extend .sr-only;
+}
+
+.screen-reader-text {
+  &:active,
+  &:focus {
+    @extend .sr-only-focusable;
+  }
+}
