@@ -15,10 +15,10 @@ add_action( 'genesis_before', 'genesis_do_subnav' );
 
 
 
-add_filter( 'genesis_do_nav', 'bsg_nav_menu', 10, 3 );
-add_filter( 'genesis_do_subnav', 'bsg_nav_menu', 10, 3 );
-function bsg_nav_menu_args_filter($nav_output, $nav, $args){
-    
+add_filter( 'genesis_do_nav', 'bsg_genesis_menu_args_filter', 10, 3 );
+add_filter( 'genesis_do_subnav', 'bsg_genesis_menu_args_filter', 10, 3 );
+function bsg_genesis_menu_args_filter($nav_output, $nav, $args){
+
     $args['depth'] = 3;
     $args['menu_class'] = 'nav navbar-nav';
     $args['fallback_cb'] = 'wp_bootstrap_navwalker::fallback';
