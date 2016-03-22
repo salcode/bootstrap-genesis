@@ -19,7 +19,7 @@ add_filter( 'genesis_do_nav', 'bsg_genesis_menu_args_filter', 10, 3 );
 add_filter( 'genesis_do_subnav', 'bsg_genesis_menu_args_filter', 10, 3 );
 function bsg_genesis_menu_args_filter($nav_output, $nav, $args){
 
-    $args['depth'] = 3;
+    $args['depth'] = 2;
     $args['menu_class'] = 'nav navbar-nav';
     $args['fallback_cb'] = 'wp_bootstrap_navwalker::fallback';
     $args['walker'] = new wp_bootstrap_navwalker();
