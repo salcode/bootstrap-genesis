@@ -18,7 +18,6 @@ function bsg_conditional_comments() {
  // http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
  */ ?>
 <head profile="http://gmpg.org/xfn/11">
-<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
 <meta charset="UTF-8" />
    <?php
 }
