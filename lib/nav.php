@@ -13,8 +13,6 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_before', 'genesis_do_nav' );
 add_action( 'genesis_before', 'genesis_do_subnav' );
 
-
-
 add_filter( 'genesis_do_nav', 'bsg_genesis_menu_args_filter', 10, 3 );
 add_filter( 'genesis_do_subnav', 'bsg_genesis_menu_args_filter', 10, 3 );
 function bsg_genesis_menu_args_filter($nav_output, $nav, $args){
