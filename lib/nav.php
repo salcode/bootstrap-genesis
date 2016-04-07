@@ -27,6 +27,8 @@ function bsg_genesis_menu_args_filter($nav_output, $nav, $args){
 
     $data_target = 'nav-collapse-' . $sanitized_location;
     $nav_markup = <<<EOT
+
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#{$data_target}">
             <span class="sr-only">Toggle navigation</span>
