@@ -7,6 +7,7 @@ Bootstrap Genesis Theme Change Log
 disabled
 - Add header 'X-UA-Compatible: IE=edge,chrome=1' to all responses
 - Add screen reader CSS classes for better accessibility
+- Add CSS clear: both to to .archive-pagination
 
 ### Changed
 - Modify check for UberMenu plugin to additionally look for `UberMenu` class
