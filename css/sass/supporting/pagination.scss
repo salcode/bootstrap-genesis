@@ -7,6 +7,10 @@
  * but this solution via CSS is simplier than modifying the markup
  *---------------------------------------------------------- */
 
+.archive-pagination {
+    clear: both;
+}
+
 .bsg-pagination-numeric ul {
     @extend .pagination;
 }
