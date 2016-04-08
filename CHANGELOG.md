@@ -11,6 +11,8 @@ disabled
 
 ### Changed
 - Modify check for UberMenu plugin to additionally look for `UberMenu` class
+- Alignment for .alignleft and .alignright is only applied from the `md`
+breakpoint and up.
 
 ### Fixed
 - Correct wrong Previous/Next Post Links Markup when using XHTML
