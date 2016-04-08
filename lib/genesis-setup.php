@@ -6,6 +6,9 @@ add_theme_support( 'html5' );
 // Remove structural Wraps
 remove_theme_support( 'genesis-structural-wraps' );
 
+// Add 4 Columns of Genesis Footer Widgets
+add_theme_support( 'genesis-footer-widgets', 4 );
+
 // Remove item(s) from genesis admin screens
 add_action( 'genesis_admin_before_metaboxes', 'bsg_remove_genesis_theme_metaboxes' );
 
