@@ -19,3 +19,8 @@ js/javascript.min.js
 # these are easily recreated on a new project
 # with `npm install`
 node_modules/
+
+# ignore composer dependencies
+# these are easily recreated on a new project
+# with `composer install`
+vendor/

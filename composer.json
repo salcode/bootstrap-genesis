@@ -1,0 +1,17 @@
+{
+    "name": "salcode/bootstrap-genesis",
+    "type": "wordpress-theme",
+    "description": "WordPress Genesis Child Theme setup to use Bootstrap, Sass, and Grunt",
+    "keywords": ["wordpress", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sal Ferrarello",
+            "email": "sal@ironcodestudio.com",
+            "homepage": "http://salferrarello.com/"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2"
+    }
+}
