@@ -1,0 +1,7 @@
+/* Fixes media queries in Internet Explorer 10 in Windows 8 and Windows Phone 8 */
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
