@@ -18,6 +18,8 @@ function bsg_conditional_comments() {
  // http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
  */ ?>
 <head profile="http://gmpg.org/xfn/11">
-<meta charset="UTF-8" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
    <?php
 }
