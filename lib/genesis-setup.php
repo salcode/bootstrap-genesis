@@ -2,6 +2,8 @@
 
 // Add HTML5 markup structure
 add_theme_support( 'html5' );
+// Remove structural Wraps
+remove_theme_support( 'genesis-structural-wraps' );
 
 // Remove structural Wraps
 remove_theme_support( 'genesis-structural-wraps' );
