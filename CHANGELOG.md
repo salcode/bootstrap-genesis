@@ -10,6 +10,7 @@ disabled
 - Add CSS clear: both to to .archive-pagination
 
 ### Changed
+- Update grunt-sass from v1 to v2
 - Modify check for UberMenu plugin to additionally look for `UberMenu` class
 - Alignment for .alignleft and .alignright is only applied from the `md`
 breakpoint and up.
