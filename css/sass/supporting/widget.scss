@@ -4,12 +4,6 @@
 // default widget styles
 .widget {
     @extend .clearfix;
-    background-color: $widgetBgColor;
-    border: 1px solid $widgetBorderColor;
-    color: $widgetFontColor;
-    padding: $padding-large-vertical $padding-large-horizontal;
-    border-radius: $border-radius-large;
-    margin-bottom: ($line-height-computed * 1.5);
 
     ul {
         padding-left: 0;
@@ -30,6 +24,12 @@
         @extend .table;
         @extend .table-condensed;
     }
+
+    // Handle the missing padding from .panel-body when no widget title is used
+    > .search-form {
+        padding: 10px 15px;
+    }
+
 }
 
 .widget_search {
